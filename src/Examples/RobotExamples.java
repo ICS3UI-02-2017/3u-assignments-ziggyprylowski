@@ -12,10 +12,12 @@ import becker.robots.Wall;
 import java.awt.Color;
 
 /**
- *Learning how to use a robot
+ * Learning how to use a robot
+ *
  * @author Ziggy Prylowski
  */
 public class RobotExamples {
+
     private static int i;
 
     /**
@@ -28,7 +30,7 @@ public class RobotExamples {
         RobotSE marcel;
         //Sets where marcel starts and is looking
         marcel = new RobotSE(kw, 2, 3, Direction.EAST);
-    //            new Wall( kw, 2, 5, Direction.WEST);
+        //            new Wall( kw, 2, 5, Direction.WEST);
         //Moves marce; one spot forward
         marcel.move(5);
         marcel.turnAround();
@@ -40,6 +42,7 @@ public class RobotExamples {
         marcel.move(5);
         marcel.turnAround();
         marcel.move(10);
-        marcel.putThing();marcel.move(2);
+        marcel.putThing();
+        marcel.move(2);
     }
 }
