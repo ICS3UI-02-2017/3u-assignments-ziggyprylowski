@@ -52,6 +52,10 @@ public class ForLoops {
             x = x / 4;
             x /= 4;
             //Divides x by 4
+            if(karel.frontIsClear() && karel.canPickThing());
+                //Combines if statements **Both must be true
+               if(karel.frontIsClear() || karel.canPickThing());
+                //Creates or statements **One must be true
         }
     }
 }
