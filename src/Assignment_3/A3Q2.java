@@ -25,7 +25,7 @@ public class A3Q2 {
         ziggy = new RobotSE(arena, 2, 1, Direction.EAST);
 //Create a robot named ziggy in arena 
         for (int i = 0; i < 10; i++) {
-new Thing(arena, 2, 2);
+            new Thing(arena, 2, 2);
         }
         ziggy.move();
         for (int i = 0; i < 10; i++) {
