@@ -30,8 +30,9 @@ public class A5Q1V2 {
                 || english.startsWith("o")
                 || english.startsWith("u"))) {
             english = "ub" + english;
+            i = i + 3;
         }
-        for (i = 3; i < length;) {
+        for (i = i; i < length; i++) {
             //If there are other vowels without a vowel before them add up before it
             if (((english.charAt(i) == 'a')
                     || (english.charAt(i) == 'e')
@@ -42,10 +43,9 @@ public class A5Q1V2 {
                     && (english.charAt(i - 1) != 'e')
                     && (english.charAt(i - 1) != 'i')
                     && (english.charAt(i - 1) != 'o')
-                    && (english.charAt(i - 1) != 'u')));
+                    && (english.charAt(i - 1) != 'u')))
             {
                 english = english.replace(english.charAt(i) + "", "ub" + english.charAt(i));
-                System.out.println(english);
                 i = i + 2;
             }
         }
